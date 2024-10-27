@@ -1,0 +1,105 @@
+.fashion {
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+}
+
+.fashion .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff4081;
+    text-decoration: none;
+}
+
+.fashion .nav-links a {
+    color: #333;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+.fashion .nav-links a:hover {
+    background-color: pink;
+    border-radius: 4px;
+}
+
+.fashion .watch a {
+    color: #333;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+.fashion .watch a:hover {
+    background-color: pink;
+    border-radius: 4px;
+}
+.image-side {
+    background-image: url('fashion.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    position: relative;
+}
+
+.image-text-overlay {
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+.started {
+    margin-top: 20px;
+}
+.nail {
+    text-align: center;
+    color: #333;
+}
+
+.started span {
+    color: #ff4081;
+}
+footer {
+    background-color: black;
+    padding: 40px 0;
+    color: white;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex-basis: 30%;
+    margin-bottom: 20px;
+}
+
+.footer-column h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.quick-links, .social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links li, .social-links li {
+    margin-bottom: 10px;
+}
+
+.quick-links a, .social-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.quick-links a:hover, .social-links a:hover {
+    color: pink;
+}
