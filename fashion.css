@@ -109,22 +109,24 @@ footer {
     color: pink;
 }
 .text-highlight {
-    color: #ff4500;
+    color: rgb(235, 152, 166);
 }
 .sidebar {
     font-size: 1.1rem;
+    padding: 20px;
+    margin-top: 20px;
 }
 .sidebar .nav-link {
     color: #ccc;
     font-weight: 500;
-    padding: 8px 0;
+    padding: 10px 0;
     transition: color 0.3s ease;
 }
 .sidebar .nav-link.active {
     color: #ff4500;
     font-weight: bold;
-    border-left: 2px solid #ff4500;
-    padding-left: 10px;
+    border-left: 3px solid #ff4500;
+    padding-left: 12px;
 }
 .sidebar .nav-link:hover {
     color: #ff4500;
@@ -132,14 +134,40 @@ footer {
 
 img {
     object-fit: cover;
+    width: 100%;
 }
-
+h2 {
+    font-size: 1.75rem;
+}
 .learn-more {
     color: #333;
     text-decoration: none;
+    padding-top: 10px;
 }
-
 .learn-more:hover {
     color: #ff4500;
+}
+.text-center {
+    margin-bottom: 30px;
+}
+.row.g-4 {
+    gap: 30px; 
+}
+.col-md-9 {
+    padding-left: 30px;
+}
+.container {
+    max-width: 1200px;
+}
+.img-fluid {
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+}
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
