@@ -20,7 +20,7 @@
 }
 
 .fashion .nav-links a:hover {
-    background-color: pink;
+    color: rgb(255, 0, 43);
     border-radius: 4px;
 }
 
@@ -32,23 +32,43 @@
 }
 
 .fashion .watch a:hover {
-    background-color: pink;
+    background-color: rgb(220, 198, 169);
     border-radius: 4px;
 }
 .image-side {
     background-image: url('fashion.jpg');
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 .image-text-overlay {
     font-size: 1.5rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
+    padding: 1rem;
     border-radius: 5px;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+.btn {
+    font-size: 1rem;
+    border-radius: 20px;
+    color: white;
+    background-color: #000000;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #da1717;
     color: white;
 }
 .started {
@@ -180,8 +200,10 @@ h2 {
     border-radius: 10px;
 }
 .custom-container {
-    max-width: 1200px;
-    margin: auto;
+    max-width: 100%;
+    width: 100%;  
+    margin: 10px; 
+    padding: 10px;    
 }
 .product-card {
     position: relative;
@@ -192,6 +214,18 @@ h2 {
 
 .product-card:hover {
     transform: scale(1.05);
+}
+.wishlist-checkbox {
+    display: none;
+}
+.wishlist-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
 }
 
 .wishlist-icon {
@@ -232,4 +266,51 @@ h2 {
     color: #28a745;
     font-weight: bold;
 }
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.wishlist-checkbox:checked {
+    color: red; 
+}
+.wishlist-icon {
+    color: #ff4500;
+}
+.text-center.my-4 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #ff4081;
+}
+.view-all-link {
+    color: inherit;
+    text-decoration: underline;
+}
 
+.view-all-link:active {
+    color: pink;
+}
+.Featured {
+    font-weight:bold 800px;
+}
+.quick-links {
+    text-decoration: none;
+    font-weight: bold;
+    color: black !important;
+}
+
+.quick-links:hover .arrow {
+    display: inline-block;
+    transform: translateX(5px);
+    transition: transform 0.2s;
+    color: #ff4500;
+}
+.quick-links:active {
+    color: red !important;
+}
+.quick-links:visited {
+    color: black !important;
+}
+.arrow {
+    display: none;
+}

@@ -11,9 +11,9 @@
 <body>
 <header>
     <nav class="fashion">
-        <div class="container my-5">
+        <div class=" m-3 px-2">
             <div class="d-flex justify-content-between align-items-center">
-                <a href="#" class="logo"><span>Little</span> Fashion</a>
+                <a href="#" class="logo"><span class="text-danger">Little</span> Fashion</a>
                 <div class="nav-links d-flex align-items-center gap-3">
                     <a href="#">Home</a>
                     <a href="#">Story</a>
@@ -29,12 +29,28 @@
         </div>
     </nav>
 </header>
-<div class="container my-5">
-    <div class="column">
-        <div class="col-md-6 image-side position-relative">
-            <div class="image-text-overlay position-absolute top-50 start-50 translate-middle text-center text-light">
+
+    <div class="container-fluid p-0">
+        <div class="row image-side position-relative" style="padding: 0; height: 100vh;">
+            <div id="carouselExampleControls" class="carousel slide h-100 w-100" data-bs-ride="carousel">
+                <div class="carousel-inner h-100">
+                    <div class="carousel-item active" style="background-image: url('image1.jpg'); background-size: cover; height: 100vh;"></div>
+                    <div class="carousel-item" style="background-image: url('image2.jpg'); background-size: cover; height: 100vh;"></div>
+                    <div class="carousel-item" style="background-image: url('image3.jpg'); background-size: cover; height: 100vh;"></div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="image-text-overlay  position-absolute bottom-0 start-0 text-light text-left" style="font-weight: bold;">
                 <h2>Discover the Latest Trends</h2>
                 <p>Style that speaks to your soul</p>
+                <a href="#about-us" class="btn  btn-lg mt-2">Learn More About Us</a>
             </div>
         </div>
         <div class="container my-5 d-flex justify-content-center align-items-center" style="height: 25vh;">
@@ -45,6 +61,7 @@
         </div>
     </div>
 </div>
+<div class="container my-5">
 <div class="row">
     <div class="col-md-3">
         <ul class="nav flex-column sidebar">
@@ -74,58 +91,71 @@
     </div>
 </div>
 </div>
-<div class="custom-container">
-  <div class="row section-container">
-    <div class="col-md-6 d-flex">
+<div class="">
+  <div class="row section-container m-0 p-0">
+    <div class="col-md-6 p-0 d-flex">
         <img src="trend.jpg" alt="dress" class="img-fluid rounded shadow-sm">
     </div>
     <div class="col-md-6 d-flex flex-column justify-content-center">
         <h2 class="fw-bold mb-3">
-            <span class="highlight">Retail</span> shop owners</h2><br>
+            <span class="highlight"style="color: red; font-weight: extra-bold;">Retail</span> shop owners</h2><br>
         <p class="text-muted mb-6">
             Credits go to Unsplash and FreePik websites for images used in this Little Fashion by Tooplate.
             </p><br>
-            <p>EXPLORE PRODUCTS <a class="class=quick-links" href="#" target="_blank"></a>
+            <p><a href="#" class="quick-links" target="_blank">
+                EXPLORE PRODUCTS 
+                <span class="arrow">→</span>
+            </a>
             </p>
     </div>
   </div>
 </div>
+<div class="container my-5 d-flex justify-content-center align-items-center" style="height: 15vh;">
+    <div class="Featured text-center">
+                <h1 class="nael">Featured Products</h1>
+</div></div>
 <div class="container my-5">
     <div class="row">
         <div class="col-md-4 mb-4">
             <div class="product-card">
-                <img src="image1.jpg" alt="Product 1" class="img-fluid">
+                <img src="product1.jpg" alt="Product 1" class="img-fluid">
                 <div class="label">New Arrival</div>
-                <i class="wishlist-icon fas fa-heart" onclick="toggleWishlist(this)"></i>
+                <input type="checkbox" id="wishlist1" class="wishlist-checkbox">
+        <label for="wishlist1" class="wishlist-icon fas fa-heart"></label>
                 <div class="product-details">
-                    <h5>Product 1</h5>
+                    <h5>Stationary</h5>
+                    <p class="product-price">$10.00</p>
                 </div>
-                    <p class="product-price">$25.00</p>
             </div>
         </div>
         <div class="col-md-4 mb-4">
             <div class="product-card">
-                <img src="image2.jpg" alt="Product 2" class="img-fluid">
+                <img src="product2.jpg" alt="Product 2" class="img-fluid">
                 <div class="label">Low Price</div>
-                <i class="wishlist-icon fas fa-heart" onclick="toggleWishlist(this)"></i>
+                <input type="checkbox" id="wishlist2" class="wishlist-checkbox">
+        <label for="wishlist1" class="wishlist-icon fas fa-heart"></label>
                 <div class="product-details">
-                    <h5>Product 2</h5>
+                    <h5>Winter outfit</h5>
                     <p class="product-price">$15.00</p>
                 </div>
             </div>
         </div>
         <div class="col-md-4 mb-4">
             <div class="product-card">
-                <img src="image3.jpg" alt="Product 3" class="img-fluid">
+                <img src="product3.jpg" alt="Product 3" class="img-fluid">
                 <div class="label">Sale</div>
-                <i class="wishlist-icon fas fa-heart" onclick="toggleWishlist(this)"></i>
+                <input type="checkbox" id="wishlist3" class="wishlist-checkbox">
+                <label for="wishlist1" class="wishlist-icon fas fa-heart"></label>
                 <div class="product-details">
-                    <h5>Product 3</h5>
+                    <h5>Heels</h5>
                     <p class="product-price">$20.00</p>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<div class="text-center my-4">
+    <a href="#" class="view-all-link">View All Products</a>
 </div>
 <footer>
     <div class="footer-content container">
